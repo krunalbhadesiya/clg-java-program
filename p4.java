@@ -5,7 +5,7 @@
     Scanner input = new Scanner(System.in);
     System.out.println("Values from Equestion:- 1 :");
     System.out.print("Enter value of a : ");
-    double a = input.nextDouble();
+    flo a = input.nextDouble();
     System.out.print("Enter value of b : ");
     double b = input.nextDouble();
     System.out.print("Enter value of e : ");

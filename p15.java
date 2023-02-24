@@ -5,25 +5,20 @@ class overload{
 		w=20;
 		h=30;
 	}
-
 	overload(double x){
 		a=x;
 	}
-
 	void Rect_Volume(){
 		double v=l*w*h;
 		System.out.println("Ractangle Volume="+v);		
 	}
-
 	void Cube_Volume(){
 		double v=a*a*a;
 		System.out.println("Cube Volume="+v);
-	}
-	
+	}	
 }
 
-
-class Const_Overload {
+class p15 {
 	public static void main(String args[]){
 		overload od = new overload();
 		od.Rect_Volume();
