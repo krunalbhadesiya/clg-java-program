@@ -1,9 +1,11 @@
+import java.util.*;
+
 class overload{
 	double l,w,h,a;
-	overload(){
-		l=10;
-		w=20;
-		h=30;
+	overload(double x,double y,double z){
+		l=x;
+		w=y;
+		h=z;
 	}
 	overload(double x){
 		a=x;
@@ -20,9 +22,20 @@ class overload{
 
 class p15 {
 	public static void main(String args[]){
-		overload od = new overload();
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter Rectangle Langth:");
+		double InpRectVolL = input.nextDouble();
+		System.out.println("Enter Rectangle Width:");
+		double InpRectVolW= input.nextDouble();
+		System.out.println("Enter Rectangle Hight:");
+		double InpRectVolH= input.nextDouble();
+
+		System.out.println("Enter Cude Langth Or Width Or Hight:");
+		double InpCubeVolLWH= input.nextDouble();
+
+		overload od = new overload(InpRectVolL,InpRectVolW,InpRectVolH);
 		od.Rect_Volume();
-		overload od1 = new overload(25.3);
-		od1. Cube_Volume();
+		overload od1 = new overload(InpCubeVolLWH);
+		od1.Cube_Volume();
 	}
 }
