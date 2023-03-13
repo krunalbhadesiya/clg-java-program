@@ -5,18 +5,18 @@ class overload {
 
 	void area(double r){
 		double area=pi*r;
-		System.out.println("Your Circle Radias="+r+"and Area Of Circle ="+area);
+		System.out.println("Your Circle Radius="+r+"and Area Of Circle ="+area);
 	}
 
 	void area(double l,double b){
 		double area=l*b;
-		System.out.println("Your Rectangle Langth="+l+"and Width="+b+"and Area Of Rectangle ="+area);
+		System.out.println("Your Rectangle Length="+l+"and Width="+b+"and Area Of Rectangle ="+area);
 	}
 
-    /*void area(double l,double b,String tr){
-		double area=(l*b)/2;
-		System.out.println("Your Rectangle Langth="+l+"and Width="+b+"and Area Of Rectangle ="+area);
-	}*/
+    //void area(double l,double b,String tr){
+	//	double area=(l*b)/2;
+	//	System.out.println("Your Rectangle Langth="+l+"and Width="+b+"and Area Of Rectangle ="+area);
+	//}
 }
 
 class p14 {
@@ -28,7 +28,6 @@ class p14 {
 		double InpRectL = input.nextDouble();
 		System.out.println("Rectangle Width:");
 		double InpRectW = input.nextDouble();
-
 
 		overload od = new overload();
 		od.area(InpCirRad);
